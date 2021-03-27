@@ -1,6 +1,6 @@
 clone the repository in htdocs folder
 
-1. git clone https://github.com/kapilchhipa4/Online-Quiz-site.git
+1. git clone https://github.com/prateekbharadwaj/online-quiz.git
 
 2. create database with name 'oq'  (ignore quatation).
 
