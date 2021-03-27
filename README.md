@@ -1,3 +1,4 @@
+# Online Quiz Web Application
 clone the repository in htdocs folder
 
 1. git clone https://github.com/prateekbharadwaj/online-quiz.git
