@@ -6,8 +6,8 @@ $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 $query="select * from question";
 $x=mysqli_query($con,$query) or die("wrong query");
 $_SESSION['prev']="1";
-$regd=$_SESSION['login'];
-$query1="insert into result set email='$regd'";
+$kapil=$_SESSION['login'];
+$query1="insert into result set email='$kapil'";
 $y=mysqli_query($con,$query1) or die("your are already done the exam registered with new email to attempt again");
 
 
@@ -130,7 +130,7 @@ else
 <div class="row">
 	<div class="col-3">
 		<form method="post" action="logout.php"> 
-<input type="submit" name="logout" class="btn btn-success" style="margin-top: 30px;margin-left: 10px;" value="logout">	</input>
+<input type="submit" name="logout" class="btn btn-success" style="margin-top: 30px;margin-left: 10px;" value="Logout">	</input>
 </form>
 	</div>
 <div class="col-6">
@@ -145,7 +145,7 @@ else
 </div>
 
 </div>
-<div class="container-fluid">
+<div class=".container-sm">
 
 <div class="row" style="text-align: right">
 <div class="col-10">
@@ -168,9 +168,9 @@ else
 </div>	
 
 <div class="col-4"  style="text-align: left">
-<div class="jumbotron jumbotron-fluid" >
+<div class="conatiner-xl" >
   <div class="container" >
-  	<form method="post" id="ka"  action="result1.php">
+  	<form method="post" action="result1.php">
       <?php 
       while($array=mysqli_fetch_array($x))
       { $qno=$array['id'];
@@ -208,10 +208,10 @@ else
     </div><?php } ?></div>	<br>
 <br>
  <div class="btn-group">
-    <button  type="button" class="btn btn-primary" style="margin-left: 40px;" id="previous">prev</button>
+    <button  type="button" class="btn btn-primary" style="margin-left: 40px;" id="previous">Prev</button>
     <button type="button" class="btn btn-primary"  style="margin-left: 40px;" id="next">Next</button>
      </div>
-<input type="submit" id="sub" class="btn btn-secondary" style="margin-left: 120px"; value="submit" ></button>
+<input type="submit" id="sub" class="btn btn-secondary" style="margin-left: 120px"; value="Submit" ></button>
 
 
  </form>
@@ -520,7 +520,7 @@ else if(x=="1"){
 });
 
 
-//attemped question should be yellow
+//attemped question should be gray
 $("input:radio[name='1']").on("change",function(){
 $("#01").css("background-color","gray");
 question1= $('input:radio[name="1"]:checked').val();

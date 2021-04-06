@@ -14,6 +14,16 @@
 </head>
 
 <body>
-<div class="jumbotron"><h1 style="text-align:center;color:red">Thank you<h1></div>
+<div class="jumbotron jumbotron-fluid"><h1 style="text-align:center;color:red;">Thank you<h1>
+<form method="post" action="index.php"> 
+    <input type="submit" name="mainpage" class="btn btn-success" style="justify-content: center;
+  height: 200px;
+  width: 260px;
+  font-weight: bolder;
+  font-size: large;
+  border: 3px solid green;
+  margin-left:650px" value="Back To MainScreen">	</input>
+</form>
+</div>
 </body>
 </html>
