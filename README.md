@@ -3,9 +3,9 @@ clone the repository in htdocs folder
 
 1. git clone https://github.com/prateekbharadwaj/online-quiz.git
 
-2. create database with name 'webproject'  (ignore quatation).
+2. create database with name 'oq'  (ignore quatation).
 
-3. import webproject.sql into your database.
+3. import oq.sql into your database.
 
 4. type localhost/online-quiz-system in browser.
 
