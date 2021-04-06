@@ -6,8 +6,8 @@ $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 $query="select * from question";
 $x=mysqli_query($con,$query) or die("wrong query");
 $_SESSION['prev']="1";
-$kapil=$_SESSION['login'];
-$query1="insert into result set email='$kapil'";
+$regd=$_SESSION['login'];
+$query1="insert into result set email='$regd'";
 $y=mysqli_query($con,$query1) or die("your are already done the exam registered with new email to attempt again");
 
 
