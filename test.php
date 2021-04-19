@@ -125,7 +125,7 @@ else
 
 	</head>
 <body>
-<div class="container-fluid" style="background-color: black; height:110px;" >
+<div class="container-fluid" style="background:rgba(76, 175, 80, 0.1); height:110px;" >
 	
 <div class="row">
 	<div class="col-3">
@@ -136,7 +136,7 @@ else
 <div class="col-6">
 
 
-<h4  style="color:white;padding-top:40px;margin-left: px; "> Hello 	<? echo $_SESSION['name'];?>, your exam is going on</h4>
+<h4  style="color:black;padding-top:40px;margin-left: px; "> Hello 	<? echo $_SESSION['name'];?>, your exam is going on</h4>
 </div>
 <div class="col-3">
 	  <p class="text-danger" id="timeleft" style="text-align:right;color:white;margin-top:50px;">Time Left: 1 minute</p>
@@ -151,18 +151,18 @@ else
 <div class="col-10">
 <br><br>
 	 <div class="btn-group">
-    <button type="button" class="btn btn-primary" value="1" id="01">1</button>
-    <button type="button" class="btn btn-primary" value="2" id="02">2</button>
-    <button type="button" class="btn btn-primary" value="3" id="03">3</button>
-    <button type="button" class="btn btn-primary" value="4" id="04">4</button>
-    <button type="button" class="btn btn-primary" value="5" id="05">5</button>
+    <button type="button" class="btn btn-light" value="1" id="01">1</button>
+    <button type="button" class="btn btn-light" value="2" id="02">2</button>
+    <button type="button" class="btn btn-light" value="3" id="03">3</button>
+    <button type="button" class="btn btn-light" value="4" id="04">4</button>
+    <button type="button" class="btn btn-light" value="5" id="05">5</button>
   </div>
  <div class="btn-group">
-    <button type="button" class="btn btn-primary" value="6" id="06">6</button>
-    <button type="button" class="btn btn-primary" value="7" id="07">7</button>
-    <button type="button" class="btn btn-primary" value="8" id="08">8</button>
-    <button type="button" class="btn btn-primary" value="9" id="09">9</button>
-    <button type="button" class="btn btn-primary" value="10" id="010">10</button>
+    <button type="button" class="btn btn-light" value="6" id="06">6</button>
+    <button type="button" class="btn btn-light" value="7" id="07">7</button>
+    <button type="button" class="btn btn-light" value="8" id="08">8</button>
+    <button type="button" class="btn btn-light" value="9" id="09">9</button>
+    <button type="button" class="btn btn-light" value="10" id="010">10</button>
   </div>
 
 </div>	
@@ -211,7 +211,7 @@ else
     <button  type="button" class="btn btn-primary" style="margin-left: 40px;" id="previous">Prev</button>
     <button type="button" class="btn btn-primary"  style="margin-left: 40px;" id="next">Next</button>
      </div>
-<input type="submit" id="sub" class="btn btn-secondary" style="margin-left: 120px"; value="Submit" ></button>
+<input type="submit" id="sub" class="btn btn-success" style="margin-left: 120px"; value="Submit" ></button>
 
 
  </form>
@@ -522,53 +522,53 @@ else if(x=="1"){
 
 //attemped question should be gray
 $("input:radio[name='1']").on("change",function(){
-$("#01").css("background-color","gray");
+$("#01").css("background-color","green");
 question1= $('input:radio[name="1"]:checked').val();
 
 
 });
 $("input:radio[name='2']").on("change",function(){
-$("#02").css("background-color","gray");
+$("#02").css("background-color","green");
 question2= $('input:radio[name="2"]:checked').val();
  
 
 
 });
 $("input:radio[name='3']").on("change",function(){
-$("#03").css("background-color","gray");
+$("#03").css("background-color","green");
 question3= $('input:radio[name="3"]:checked').val();
 
 });
 $("input:radio[name='4']").on("change",function(){
-$("#04").css("background-color","gray");
+$("#04").css("background-color","green");
 question4= $('input:radio[name="4"]:checked').val();
 
 });
 $("input:radio[name='5']").on("change",function(){
-$("#05").css("background-color","gray");
+$("#05").css("background-color","green");
 question5= $('input:radio[name="5"]:checked').val();
 
 
 });
 $("input:radio[name='6']").on("change",function(){
-$("#06").css("background-color","gray");
+$("#06").css("background-color","green");
 question6= $('input:radio[name="6"]:checked').val();
 });
 
 $("input:radio[name='7']").on("change",function(){
-$("#07").css("background-color","gray");
+$("#07").css("background-color","green");
 question7= $('input:radio[name="7"]:checked').val();
 });
 $("input:radio[name='8']").on("change",function(){
-$("#08").css("background-color","gray");
+$("#08").css("background-color","green");
 question8= $('input:radio[name="8"]:checked').val();
 });
 $("input:radio[name='9']").on("change",function(){
-$("#09").css("background-color","gray");
+$("#09").css("background-color","green");
 question9= $('input:radio[name="9"]:checked').val(); 
 });
 $("input:radio[name='10']").on("change",function(){
-$("#010").css("background-color","gray");
+$("#010").css("background-color","green");
 question10= $('input:radio[name="10"]:checked').val();
 
 });

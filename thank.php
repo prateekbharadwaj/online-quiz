@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<div class="jumbotron jumbotron-fluid"><h1 style="text-align:center;color:red;">Thank you<h1>
+<div class="jumbotron jumbotron-fluid"><h1 style="text-align:center;color: green;">Thank You!<h1>
 <form method="post" action="index.php"> 
     <input type="submit" name="mainpage" class="btn btn-success" style="justify-content: center;
   height: 200px;

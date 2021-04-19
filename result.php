@@ -181,8 +181,8 @@ $array=mysqli_fetch_array($x);
 	</head>
 
 <body>
-
-<div class="container-fluid bg-dark jumbotron shadow-lg text-left bg-dark rounded-0 text-light" style="background-color: black;"  >
+<div style="background: rgba(76, 175, 80, 0.1);">
+<div class="container-fluid bg-dark jumbotron shadow-lg text-left bg-dark rounded-0 text-light" style=";"  >
 	
 <div class="row">
 	<div class="col-4">
@@ -191,14 +191,14 @@ $array=mysqli_fetch_array($x);
 </form>
 <h1 style="color:white;"> Score:</h1>
 <h4 style="color:white">Total Question: 10</h4>
-<h4 style="color:white">Write Question :<?php echo $right;?></h4>
-<h4 style="color:white">wrong Question :<?php echo "$wrong"?></h4>
+<h4 style="color:white">Correct Answers :<?php echo $right;?></h4>
+<h4 style="color:white">Wrong Answers:<?php echo "$wrong"?></h4>
 <h4 style="color:white">Not attempted Question :<?php echo $notattempt;?></h4>
 	</div>
 <div class="col-4">
 
 
-<h4  style="color:white;padding-top:40px;margin-left: px; "> Hello 	<? echo $_SESSION['name'].", ";?>Here is your result</h4>
+<h4  style="color:white;padding-top:40px;margin-left: px; "> Hello 	<? echo $_SESSION['name'].", ";?>,Here is your result</h4>
 </div>
 
 <div>
@@ -216,3 +216,5 @@ $array=mysqli_fetch_array($x);
 </div>
 
 </div>
+</div>
+</body>

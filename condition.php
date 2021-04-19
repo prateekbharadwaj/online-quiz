@@ -21,7 +21,7 @@ header("Location:signup.php?err12=1");
 
 <body>
 
-<div class="container-fluid jumbotron ;"  style="background-color: #336600">
+<div class="container-fluid jumbotron ;"  style="background:rgba(76, 175, 80, 0.1)">
 	<div class="row">
 		<div class="col-3">
 		<h1 style="font-size: 30px; text-align: center; margin-top:50px; font-weight: bolder">Welcome </h1>
@@ -33,23 +33,23 @@ header("Location:signup.php?err12=1");
 </div>
 <div class="col-3">
 	<form method="post" action="logout.php"> 
-<input type="submit" name="logout" class="btn btn-danger" style="margin-top: 10px;" value="Logout">	</input>
+<input type="submit" name="logout" class="btn btn-success" style="margin-top: 10px;" value="Logout">	</input>
 </form>
 </div>
 
 </div></div>
 <div class="container">
   <div class="card-deck">
-    <div class="card" style="background-color: grey">
+    <div class="card" style="background:rgba(76, 175, 80, 0.1)">
       <div class="card-body text-center">
         <h1 class="card-text" style="color: black;text-align:left">Instruction For Exam</h1>
-        <h4 class="card-text" style="color: white;text-align:left;">1. This is a multiple choice Test and contains 10 question to be answered in 10 minutes.</h4>
-        <h4 class="card-text" style="color: white;text-align:left;">2. Each Question have 1 marks for right answer.</h4>
-        <h4 class="card-text" style="color: white;text-align:left;">3. Click the <b>Start Test</b> below to start</h4>
+        <h4 class="card-text" style="color: black;text-align:left;">1. This is a Multiple choice Test & contains 10 questions to be answered in 10 minutes.</h4>
+        <h4 class="card-text" style="color: black;text-align:left;">2. Each Question has 1 mark for right answer.</h4>
+        <h4 class="card-text" style="color: black;text-align:left;">3. Click the <b>Start Test</b> below to start.</h4>
        
-       <h4 class="card-text" style="color: white;text-align:left;">4. A question and the possible answers choices appear</h4>
+       <h4 class="card-text" style="color: black;text-align:left;">4. One after another questions with its options will appear.</h4>
 
-       <h4 class="card-text" style="color: white;text-align:left;">5. you can submit before time. but after submit you cant join Test.</h4>
+       <h4 class="card-text" style="color: black;text-align:left;">5. You can submit before time but, you can't appear again.</h4>
        <form method="post" action="test.php">
        <input  type="submit" class="btn btn-success" value="Start Test"></input>
    </form>

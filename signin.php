@@ -113,7 +113,7 @@ background-size: 100% 100%;">
 <div class="row">
 
 <div class="col" >
-<h1>Sign In</h1>
+<p class="text" style="font-size: 50px; text-align: center; margin-top:40px; background: rgba(76, 175, 80, 0.1);">Sign In</p>
 <form action="login.php" method="post">
     <div class="form-group">
       <label for="email">Email:</label>
