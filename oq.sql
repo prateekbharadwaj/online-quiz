@@ -23,6 +23,17 @@ CREATE TABLE `question` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 
+CREATE TABLE `registration` (
+  `name` varchar(40) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `dob` date NOT NULL,
+  `gender` varchar(5) NOT NULL,
+  `mobile` int(12) NOT NULL,
+  `password` varchar(30) NOT NULL,
+  `institute` varchar(50) NOT NULL,
+  `course` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 
 CREATE TABLE `result` (

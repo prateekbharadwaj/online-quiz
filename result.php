@@ -203,7 +203,7 @@ $array=mysqli_fetch_array($x);
 
 <div>
 <form method="post" action="viewresult.php"> 
-    <input type="submit" name="mainpage" class="btn btn-info" style="display: flex;
+    <input type="submit" name="viewresult" class="btn btn-info" style="display: flex;
 
   height: 100px;
   border: 3px solid green;
@@ -216,5 +216,3 @@ $array=mysqli_fetch_array($x);
 </div>
 
 </div>
-
-

@@ -1,3 +1,6 @@
+
+
+
 <html lang="en">
 <head>
 
@@ -95,7 +98,7 @@
  </script>
 
 <div class="container-fluid" style="height:100px"; id="sp-header";>
-  <h1 style="text-align:center;padding-top: 20px;color: white">Online Examination Portal</h1>
+  <h1 style="text-align:center;padding-top: 20px; color:green;">Online Examination Portal</h1>
 
 
 </div>
@@ -104,14 +107,22 @@
 </head>
 <body>
 
-<div style="background-image: url('file/bg.jpg');
-background-size: 100% 100%;">
+
+<div style="background: rgba(76, 175, 80, 0.1);">
 
 
+<div class="input">
+    
+    <br>
+    <br>
+    <br>
+    <br>
+</div>
 
-<div class="container"; style="top:70"; >
+<div class="container"; style="'text-align:justify' ;">
 <div class="row">
 
+<div class="text-body";>
 <div class="col" >
 <!-- <h1>Sign In</h1>
 <form action="login.php" method="post">
@@ -130,7 +141,7 @@ background-size: 100% 100%;">
     </div>
     <button type="submit" class="btn btn-success" name="2">Submit</button>
   </form> -->
-  <?php
+  <?php 
   if(isset($_REQUEST['err']))
     {
         echo"<h1 style='text-align:center;'> You are Already Registered";
@@ -183,8 +194,8 @@ background-size: 100% 100%;">
 <label>Password:</label>
 <input type="password" class="form-control" id="status" name="password"  required >
 
-<label>Branch:</label>
-<input type="text" class="form-control"  required  name="branch">
+<label>Course:</label>
+<input type="text" class="form-control"  required  name="course">
 <label>Institute:</label>
 <input type="text" class="form-control"  required   name="institute">
   
@@ -192,13 +203,37 @@ background-size: 100% 100%;">
   <button type="submit" class="btn btn-success" name="1" onclick="return func()">Submit</button>
 </form> 
 </div>
-
-
-</div>
 </div>
 
 </div>
+</div>
 
+
+<?php
+
+session_start();
+
+
+if(isset($_POST["1"]))
+{
+	$name=$_POST["name"];
+	$email=$_POST["email1"];
+	$dob=$_POST["dob"];
+	$gender=$_POST["gender"];
+	$mobile=$_POST["mobile"];
+	$password=$_POST["password"];
+	$course=$_POST["course"];
+	$insti=$_POST["institute"];
+
+	$con=mysqli_connect("localhost","root","","oq") or die("database not found");
+$query= "insert into registration set name='$name', email='$email', 
+    dob='$dob', mobile='$mobile', course='$course',gender='$gender', password='$password', institute='$insti' ";
+$x=	mysqli_query($con,$query) or die(header("Location:index.php?err=1"));
+header("Location:success.php?err=1");
+}
+
+?>
 
 
 </body>
+</html>
