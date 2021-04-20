@@ -5,9 +5,6 @@ header("Location:index.php?err12=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 //echo $_POST['que1'];
 
-
-
-
 $query="select * from question";
 $x=mysqli_query($con,$query) or die("wrong query");
 $array=mysqli_fetch_array($x);
@@ -43,13 +40,6 @@ $array=mysqli_fetch_array($x);
   <script src="file/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
  
   <style>
-	/*input[type="radio"]{
-  
-    height: 20px;
-    width:025px;
-    background-color: red;
-    border-radius: 50%;
-    }*/
     .container1 {
   display: block;
   position: relative;
@@ -113,12 +103,6 @@ $array=mysqli_fetch_array($x);
   background: white;
 }
 
-
-
-
-
-
-
 .checkmark1 {
   position: absolute;
   top: 0;
@@ -161,31 +145,12 @@ $array=mysqli_fetch_array($x);
   background: white;
 }
 
-
-
-
-
-/* style="margin-top: 50px;margin-left: 50px;" */
-
-
 .label{
   display: inline-block;
   margin-bottom: 0.5rem;
 }
 </style>
 
-<!-- <div class="row">
-	<div class="col-12">
-		<form method="post" action="thank.php"> 
-<input type="submit" name="logout" class="btn btn-danger"  style="margin-top: 50px;margin-left: 50px;" value="Logout">	</input>
-</form>
-</div>
-<div class="col-6">
-		<form method="post" action="result.php"> 
-<input type="submit" name="back" class="btn btn-info" style="margin-top: 50px;margin-left: 50px;" value="Back">	</input>
-</form>
-</div>
-</div> -->
 <div class="row">
   <div class="col-auto mr-auto"><form method="post" action="thank.php"> 
 <input type="submit" name="logout" class="btn btn-danger"  style="margin-top: 50px;margin-left: 250px;" value="Logout">	</input>
