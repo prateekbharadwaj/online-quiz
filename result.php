@@ -187,7 +187,7 @@ $array=mysqli_fetch_array($x);
 <div class="row">
 	<div class="col-4">
 		<form method="post" action="thank.php"> 
-<input type="submit" name="logout" class="btn btn-success" style="margin-top: 30px;margin-left: 10px;" value="Logout">	</input>
+<input type="submit" name="logout" class="btn btn-danger" style="margin-top: 30px;margin-left: 10px;" value="Logout">	</input>
 </form>
 <h1 style="color:white;"> Score:</h1>
 <h4 style="color:white">Total Question: 10</h4>

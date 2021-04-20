@@ -41,6 +41,7 @@ $array=mysqli_fetch_array($x);
   <link rel="stylesheet" href="file/bootstrap-4.2.1-dist/css/bootstrap.min.css">
   <script src="file/jquery.min.js"></script>
   <script src="file/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+ 
   <style>
 	/*input[type="radio"]{
   
@@ -164,7 +165,7 @@ $array=mysqli_fetch_array($x);
 
 
 
-
+/* style="margin-top: 50px;margin-left: 50px;" */
 
 
 .label{
@@ -172,6 +173,27 @@ $array=mysqli_fetch_array($x);
   margin-bottom: 0.5rem;
 }
 </style>
+
+<!-- <div class="row">
+	<div class="col-12">
+		<form method="post" action="thank.php"> 
+<input type="submit" name="logout" class="btn btn-danger"  style="margin-top: 50px;margin-left: 50px;" value="Logout">	</input>
+</form>
+</div>
+<div class="col-6">
+		<form method="post" action="result.php"> 
+<input type="submit" name="back" class="btn btn-info" style="margin-top: 50px;margin-left: 50px;" value="Back">	</input>
+</form>
+</div>
+</div> -->
+<div class="row">
+  <div class="col-auto mr-auto"><form method="post" action="thank.php"> 
+<input type="submit" name="logout" class="btn btn-danger"  style="margin-top: 50px;margin-left: 250px;" value="Logout">	</input>
+</form></div>
+  <div class="col-auto"><form method="post" action="result.php"> 
+<input type="submit" name="back" class="btn btn-info" style="margin-top: 50px;margin-right: 250px;" value="Back">	</input>
+</form></div>
+</div>
 <div class="container col-md-8 p-3 border shadow-lg">
 	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Instruction</button>
   <div id="demo" class="collapse"><button  type="button" style="height:20px;width:40px;" class="btn btn-success"></button>Right Attempted<br>
