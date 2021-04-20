@@ -17,7 +17,7 @@ if(isset($_POST["1"]))
 	$con=mysqli_connect("localhost","root","","oq") or die("database not found");
 $query= "insert into registration set name='$name', email='$email', 
     dob='$dob', mobile='$mobile', course='$course',gender='$gender', password='$password', institute='$insti' ";
-$x=	mysqli_query($con,$query) or die(header("Location:index.php?err=1"));
+$x=	mysqli_query($con,$query) or die(header("Location:signin.php?err=1"));
 header("Location:success.php?err=1");
 }
 

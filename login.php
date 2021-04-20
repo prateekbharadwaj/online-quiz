@@ -11,7 +11,7 @@ $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 $query="select * from registration where email='$email'";
 $x=mysqli_query($con,$query) or die("wrong query");
 if(mysqli_num_rows($x)==0)
-header("Location:index.php?err1=1");
+header("Location:signin.php?err1=1");
 else
 {
 	$array=mysqli_fetch_array($x);
@@ -25,7 +25,7 @@ else
 
 	}
 	else
-		header("Location:index.php?err2=1");
+		header("Location:signin.php?err2=1");
 
 }
 
@@ -34,7 +34,7 @@ else
 else 
 {
 
-header("Location:index.php?err12=1");
+header("Location:signin.php?err12=1");
 
 }
 ?>
