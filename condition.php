@@ -14,9 +14,11 @@ header("Location:signup.php?err12=1");
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="file/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="file/jquery.min.js"></script>
   <script src="file/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
   <script src="file/myjquery.js"></script>
+
 </head>
 
 <body>
@@ -36,9 +38,10 @@ header("Location:signup.php?err12=1");
 <input type="submit" name="logout" class="btn btn-success" style="margin-top: 10px;" value="Logout">	</input>
 </form>
 </div>
-
-</div></div>
+</div>
+</div>
 <div class="container">
+
   <div class="card-deck">
     <div class="card" style="background:rgba(76, 175, 80, 0.1)">
       <div class="card-body text-center">
@@ -50,14 +53,25 @@ header("Location:signup.php?err12=1");
        <h4 class="card-text" style="color: black;text-align:left;">4. One after another questions with its options will appear.</h4>
 
        <h4 class="card-text" style="color: black;text-align:left;">5. You can submit before time but, you can't appear again.</h4>
-       <form method="post" action="test.php">
+       <form method="post" action="tryphp.php">
+  <section id="header-container">
+  <select name="sub">
+    <option disabled>Select a Subject?</option>
+    <option value="ml">Machine Learning </option>
+    <option value="ai">Artificial Intelligence</option>
+    <option value="cn">Computer Networks</option>
+    <option value="se">Sofeware Engineering</option>
+    <option value="os">Operating System</option>
+  </select>
+</section>
+
        <input  type="submit" class="btn btn-success" value="Start Test"></input>
    </form>
+
+   
       </div>
     </div>
 </div>
-   
-
-</div>
+  </div>
 </body>
 </html>

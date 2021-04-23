@@ -8,6 +8,9 @@ $password=$_POST['password'];
 
 
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
+
+$q="DELETE FROM regd";
+$d = mysqli_query($con,$q) or die("Database not cleard");
 $query="select * from registration where email='$email'";
 $x=mysqli_query($con,$query) or die("wrong query");
 if(mysqli_num_rows($x)==0)

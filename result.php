@@ -5,10 +5,15 @@ header("Location:index.php?err12=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 //echo $_POST['que1'];
 
+$email = $_SESSION['login'];
+$q = "select * from regd where email = '$email'";
+$res=mysqli_query($con,$q) or die("yoyo query");
 
+while($result=mysqli_fetch_array($res)){
+    $sub= $result['sub'];
+}
+$query="select * from question where sub = '$sub'";
 
-
-$query="select * from question";
 $x=mysqli_query($con,$query) or die("wrong query");
 $array=mysqli_fetch_array($x);
 $email=$_SESSION['login'];
@@ -68,7 +73,7 @@ $array=mysqli_fetch_array($x);
 <div class="col-4">
 
 
-<h4  style="color:white;padding-top:40px;margin-left: px; "> Hello 	<? echo $_SESSION['name'].", ";?>,Here is your result</h4>
+<h4  style="color:white;padding-top:40px;margin-left: px; "> Hello 	<?php echo $_SESSION['name'];?>, Here is your result</h4>
 </div>
 
 <div>

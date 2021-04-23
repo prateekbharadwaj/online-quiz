@@ -4,11 +4,16 @@ if(!isset($_SESSION['login']))
 header("Location:index.php?err12=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 //echo $_POST['que1'];
+$email = $_SESSION['login'];
+$q = "select * from regd where email = '$email'";
+$res=mysqli_query($con,$q) or die("yoyo query");
 
-$query="select * from question";
+while($result=mysqli_fetch_array($res)){
+    $sub= $result['sub'];
+}
+$query="select * from question where sub = '$sub'";
 $x=mysqli_query($con,$query) or die("wrong query");
 $array=mysqli_fetch_array($x);
-$email=$_SESSION['login'];
 $query1="select * from result where email='$email'";
 
 $z=mysqli_query($con,$query1) or die("wrong result");
@@ -176,15 +181,15 @@ $array=mysqli_fetch_array($x);
 </div><br><br><br>
 
 	<?php
-$query="select * from question";
+$query="select * from question where sub = '$sub'";
 $x=mysqli_query($con,$query) or die("wrong query");
 while($array=mysqli_fetch_array($x))
-{	$index=$array['id'];
+{	$index=$array['no'];
 	?>
 	
 	<h5  <?php if($array2[$index]==$array['answer']){ ?>style="background-color: green;padding: 10px;border:1px solid gray;"; <?php } ?> <?php if($array2[$index]=='0'){ ?>style="background-color: yellow;padding: 10px;border:5px solid yellow;" <?php } ?> 
-	<?php  if($array2[$index]!=$array['answer']){ ?>style="background-color: red;padding: 10px;border:1px solid red;" <?php } ?>>Q.<?php echo $array['id']." ".$array['question']; ?> </h5>
-	<?php $name=$array['id'];?>
+	<?php  if($array2[$index]!=$array['answer']){ ?>style="background-color: red;padding: 10px;border:1px solid red;" <?php } ?>>Q.<?php echo $array['no']." ".$array['question']; ?> </h5>
+	<?php $name=$array['no'];?>
 	<label class="container1">
 	<input type="radio" disabled id="<?php echo $array['option1'];?>" name='<?php echo "$name"?>'><?php echo $array['option1'];?><br>
 	<span class="checkmark"></span>
@@ -215,7 +220,7 @@ while($array=mysqli_fetch_array($x))
 <script>
 	$(document).ready(function(){
 		<?php
-	$query="select * from question";
+	$query="select * from question where sub = '$sub'";
 	$x=mysqli_query($con,$query) or die("wrong query");
 	$array=mysqli_fetch_array($x);
 	$query1= "select * from result where email='$email'";

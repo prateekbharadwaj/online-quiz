@@ -3,8 +3,18 @@ session_start();
 if(!isset($_SESSION['login']))
 header("Location:index.php?err12=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
-$query="select * from question";
+$email = $_SESSION['login'];
+$q = "select * from regd where email = '$email'";
+$res=mysqli_query($con,$q) or die("yoyo query");
+
+while($result=mysqli_fetch_array($res)){
+    $sub= $result['sub'];
+}
+$query="select * from try where sub = '$sub'";
 $r=mysqli_query($con,$query);
+while ($row = $r->fetch_assoc()) {
+    echo $row['classtype']."<br>";
+}
 $array=mysqli_fetch_array($r);
 $q1=0;
 $q2=0;

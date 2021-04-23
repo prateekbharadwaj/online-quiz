@@ -167,7 +167,7 @@
 
 
 <div class="col">
-  <h1 style="display: inline-block;">Sign Up</h1>
+  <h1 style="font-size: 50px; text-align: center; margin-top:40px; background: rgba(76, 175, 80, 0.1);">Sign Up</h1>
 <form  action="signup1.php" method="post" name="form1">
   <label style="margin-top:50px;" >Name:  </label>
   <input type="text" class="form-control" style="margin-top:0px;" required name="name" > 

@@ -94,8 +94,8 @@
 
  </script> -->
 
-<div class="container-fluid" style="height:100px"; id="sp-header";>
-  <h1 style="text-align:center;padding-top: 20px;color: white">Online Examination Portal</h1>
+ <div class="container-fluid" style="height:100px"; id="sp-header";>
+  <h1 style="text-align:center;padding-top: 20px; color:green;">Online Examination Portal</h1>
 
 
 </div>

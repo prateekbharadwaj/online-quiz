@@ -1,9 +1,16 @@
 <?php
 session_start();
 if(!isset($_SESSION['login']))
-header("Location:index.php?err12=1");
+header("Location:signin.php?err12=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
-$query="select * from question";
+$email = $_SESSION['login'];
+$q = "select * from regd where email = '$email'";
+$res=mysqli_query($con,$q) or die("yoyo query");
+
+while($result=mysqli_fetch_array($res)){
+    $sub= $result['sub'];
+}
+$query="select * from question where sub = '$sub'";
 $x=mysqli_query($con,$query) or die("wrong query");
 $_SESSION['prev']="1";
 $regd=$_SESSION['login'];
@@ -136,7 +143,7 @@ else
 <div class="col-6">
 
 
-<h4  style="color:black;padding-top:40px;margin-left: px; "> Hello 	<? echo $_SESSION['name'];?>, your exam is going on</h4>
+<h4  style="color:black;padding-top:40px;margin-left: px; "> Hello 	<?php echo $_SESSION['name'];?>, your exam is going on</h4>
 </div>
 <div class="col-3">
 	  <p class="text-danger" id="timeleft" style="text-align:right;color:white;margin-top:50px;">Time Left: 1 minute</p>
@@ -173,11 +180,11 @@ else
   	<form method="post" action="result1.php">
       <?php 
       while($array=mysqli_fetch_array($x))
-      { $qno=$array['id'];
+      { $qno=$array['no'];
         ?>
-        <div id="<?php echo $array['id'];?>">
+        <div id="<?php echo $array['no'];?>">
           
-   <p>Que.<?php echo $array['id']." "; ?><?php echo $array['question'] ?></p></li>
+   <p>Que.<?php echo $array['no']." "; ?><?php echo $array['question'] ?></p></li>
    
   <div class="form-check">
       <label class="form-check-label container1">
