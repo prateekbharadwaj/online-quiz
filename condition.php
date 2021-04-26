@@ -66,7 +66,7 @@ header("Location:signup.php?err12=1");
             <option value="ml">Machine Learning </option>
             <option value="ai">Artificial Intelligence</option>
             <option value="cn">Computer Networks</option>
-            <option value="se">Sofeware Engineering</option>
+            <option value="se">Software Engineering</option>
             <option value="os">Operating System</option>
           </select>
         </section>

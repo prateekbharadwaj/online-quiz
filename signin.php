@@ -13,86 +13,6 @@
   <script src="file/jquery.min.js"></script>
   <script src="file/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
   <script src="file/myjquery.js"></script>
-<!-- <script>
-   function func()
-               {
-                            //student name validation
-                             var x=document.forms['form1']['name'].value;
-                            var i;
-                           
-                               
-                               for(i=0;i<x.length;i++)
-                               {
-                                      ch=x.charAt(i);
-                                    if(!(ch>='a' && ch<='z') && !(ch>='A' && ch<='Z') && !(ch==' '))
-                                    {
-                                        alert("Invalid Student name");
-                                        return false;
-                                    }
-                               
-
-                               }
-
-                     var e=document.forms['form1']['email1'].value;                  
-                               if(e.length==0)
-                                 {
-                                     alert("Please Enter Your Details");
-                                     return false;
-                                 }
-                                 if(e.indexOf("@")==0)
-                                     {
-                                         alert('Please Enter Valid Email');
-                                           return false;
-                                            }
-                                  if(((e.charAt(e.length-4))!='.') && ((e.charAt(e.length-3))!='.'))
-                                    {
-                                             alert('Please Enter Valid Email');
-                                             return false;
-                                    }
-
-                      
-                          
-
-
-                            // Mobile Number Validation
-                             var xyz=document.forms['form1']['mobile'].value; 
-                                if(xyz.length==0)
-                                 {
-                                    alert("Please Enter Mobile number");
-                                    return false;
-                                 } 
-                                 if(xyz.length<10 || xyz.length>10)
-                                 {
-                                   alert("Please Enter ten digit Mobile number");
-                                   return false;
-                                 }
-                                  if(xyz.charAt(0)<=6)
-                                {
-                                    alert("Enter valid Mobile number");
-                                    return false;
-                                 }  
-                 
-
-                      var pass1=document.forms['form1']['password'].value;
-                                  if(pass1.length==0)
-                                  {
-                                      alert("Please Enter Password");
-                                      return false; 
-                                  }
-                                  if(pass1.length<8)
-                                     {
-                                            alert('enter atleast 8 digit or letter');
-                                            return false;
-                                         }
-
-                      
-                             // email validation                    }   
-                            
-                         
-                                                  
-                }
-
- </script> -->
 
  <div class="container-fluid" style="height:100px"; id="sp-header";>
   <h1 style="text-align:center;padding-top: 20px; color:green;">Online Examination Portal</h1>
@@ -149,6 +69,11 @@ background-size: 100% 100%;">
      if(isset($_REQUEST['err12']))
     {
         echo"<h1 style='text-align:center;'> Successfully Registered";
+      
+    }
+    if(isset($_REQUEST['err13']))
+    {
+        echo"<h1 style='text-align:center;'> Please Login";
       
     }
     ?>

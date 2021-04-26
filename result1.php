@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login']))
-header("Location:index.php?err12=1");
+header("Location:signin.php?err13=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 $email = $_SESSION['login'];
 $q = "select * from regd where email = '$email'";

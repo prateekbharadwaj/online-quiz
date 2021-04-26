@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login']))
-header("Location:index.php?err12=1");
+header("Location:signin.php?err13=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 //echo $_POST['que1'];
 $email = $_SESSION['login'];
@@ -179,7 +179,7 @@ $array=mysqli_fetch_array($x);
 </div>
 <div class="container col-md-8 p-3 border shadow-lg">
 	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Instruction</button>
-  <div id="demo" class="collapse"><button  type="button" style="height:20px;width:40px;" class="btn btn-success"></button>Write Attempted<br>
+  <div id="demo" class="collapse"><button  type="button" style="height:20px;width:40px;" class="btn btn-success"></button>Correct Answer<br>
   <button  type="button" style="height:20px;width:40px;" class="btn btn-danger"></button>  Wrong Attempted<br>
  <button type="button" style="height:20px;width:40px;" class="btn btn-warning"></button>  Not Attempted
 <br><br>
