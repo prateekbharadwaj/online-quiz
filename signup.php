@@ -124,23 +124,6 @@
 
 <div class="text-body";>
 <div class="col" >
-<!-- <h1>Sign In</h1>
-<form action="login.php" method="post">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
-    </div>
-    <div class="form-group form-check">
-      <label class="form-check-label">
-        <input class="form-check-input" type="checkbox" name="remember"> Remember me
-      </label>
-    </div>
-    <button type="submit" class="btn btn-success" name="2">Submit</button>
-  </form> -->
   <?php 
   if(isset($_REQUEST['err']))
     {

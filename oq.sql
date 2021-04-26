@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2021 at 05:48 PM
+-- Generation Time: Apr 26, 2021 at 06:42 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -98,38 +98,6 @@ INSERT INTO `question` (`id`, `no`, `question`, `option1`, `option2`, `option3`,
 -- --------------------------------------------------------
 
 --
--- Table structure for table `question_1`
---
-
-CREATE TABLE `question_1` (
-  `id` int(3) NOT NULL,
-  `question` varchar(250) NOT NULL,
-  `option1` varchar(250) NOT NULL,
-  `option2` varchar(250) NOT NULL,
-  `option3` varchar(250) NOT NULL,
-  `option4` varchar(250) NOT NULL,
-  `answer` int(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `question_1`
---
-
-INSERT INTO `question_1` (`id`, `question`, `option1`, `option2`, `option3`, `option4`, `answer`) VALUES
-(1, 'What is true about Machine Learning?', 'Machine Learning (ML) is that field of computer science', 'ML is a type of artificial intelligence that extract patterns out of raw data by using an algorithm or method.', 'The main focus of ML is to allow computer systems learn from experience without being explicitly programmed or human intervention.', 'All of the above', 4),
-(2, ' Which of the following is a disadvantage of decision trees?', 'Factor analysis', 'Decision trees are robust to outliers', 'Decision trees are prone to be overfit', 'None of the above', 3),
-(3, '2. ML is a field of AI consisting of learning algorithms that?', 'Improve their performance', 'At executing some task', 'Over time with experience', 'All of the above', 2),
-(4, '4. The action ___ of a robot arm specify to Place block A on block B.', 'STACK(A,B)', 'LIST(A,B)', 'QUEUE(A,B)', 'ARRAY(A,B)', 1),
-(5, 'A model of language consists of the categories which does not include ____.', 'System Unit', 'structural units', 'data units', 'empirical units', 2),
-(6, 'Different learning methods does not include?', 'Introduction', 'Analogy', 'Deduction', 'Memorization', 1),
-(7, 'The model will be trained with data in one single batch is known as?', 'Batch learning', 'Offline learning', 'Both A and B', 'None of the above', 3),
-(8, ' Which of the following are ML methods?', 'based on human supervision', 'supervised Learning', 'semi-reinforcement Learning', 'All of the above', 1),
-(9, 'In Model based learning methods, an iterative process takes place on the ML models that are built based on various model parameters, called?', 'mini-batches', 'optimizedparameters', 'hyperparameters', 'superparameters', 3),
-(10, 'Which of the following is a widely used and effective machine learning algorithm based on the idea of bagging?', 'Decision Tree', 'Regression', 'Classification', 'Random Forest', 4);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `regd`
 --
 
@@ -143,7 +111,7 @@ CREATE TABLE `regd` (
 --
 
 INSERT INTO `regd` (`email`, `sub`) VALUES
-('77777@gmail.com', 'cn');
+('77777@gmail.com', 'ml');
 
 -- --------------------------------------------------------
 
@@ -171,7 +139,7 @@ INSERT INTO `registration` (`name`, `email`, `dob`, `gender`, `mobile`, `passwor
 ('Prateek Bharadwaj', 'pppp@gmail.com', '0111-11-11', 'male', 2147483647, '123456789', 'sili', 'abc'),
 ('Prateek Bharadwaj', 'prat@gmail.com', '0022-02-22', 'male', 2147483647, '147258369', 'sili', 'abc'),
 ('pppp', 'prateek@gmail.com', '2222-02-22', 'male', 2147483647, '147258369', 'jjjjjj', 'abc'),
-('Prateek Bharadwaj', 'prateekbharad253waj3@gmail.com', '2021-04-29', 'male', 2147483647, '5675675757', 'SHIT', 'abc'),
+('Prateek Bharadwaj', 'prateekb@gmail.com', '2001-05-24', 'male', 2147483647, '123456789', 'mkmm', 'abc'),
 ('Prateek Bharadwaj', 'prateekbharadwaj2533@gmail.com', '2000-07-20', 'male', 2147483647, '123456789', 'mkmm', 'abc');
 
 -- --------------------------------------------------------
@@ -199,61 +167,8 @@ CREATE TABLE `result` (
 --
 
 INSERT INTO `result` (`email`, `one`, `two`, `three`, `four`, `five`, `six`, `seven`, `eight`, `nine`, `ten`) VALUES
-('77777@gmail.com', 3, 3, 0, 0, 3, 0, 3, 0, 0, 0),
-('prateekbharadwaj2533@gmail.com', 2, 2, 0, 0, 0, 0, 0, 0, 0, 0);
-
--- --------------------------------------------------------
-
---
--- Table structure for table `try`
---
-
-CREATE TABLE `try` (
-  `id` int(3) NOT NULL,
-  `no` int(3) NOT NULL,
-  `question` varchar(250) NOT NULL,
-  `option1` varchar(250) NOT NULL,
-  `option2` varchar(250) NOT NULL,
-  `option3` varchar(250) NOT NULL,
-  `option4` varchar(250) NOT NULL,
-  `answer` int(3) NOT NULL,
-  `sub` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `try`
---
-
-INSERT INTO `try` (`id`, `no`, `question`, `option1`, `option2`, `option3`, `option4`, `answer`, `sub`) VALUES
-(1, 1, 'Which class automatically flushes the data so that there is no need to call the flush() method. Moreover, its methods don\'t throw IOException?', 'Console class', 'Scanner Class', 'FileInputStream class', 'PrintStream class', 4, 'ai'),
-(2, 2, ' How many methods does a thread class provides for sleeping a thread?', '3', '1', '4', '2', 2, 'ai'),
-(3, 3, 'Which class members can be accessed from the classes in the same package as well as classes in other Packages that are subclasses of the declaring class?', 'private', 'Public', 'Protected', 'None of the above', 3, 'ai'),
-(4, 4, 'Which method of object class can clone an object?', 'copy()', 'Objectcopy()', ' Objectclone()', 'Clone()', 3, 'ai'),
-(5, 5, 'Which is a technique in Java in which a class can have any number of constructors that differ in parameter lists?', 'Constructor overloading', 'Method overloading', 'Operator overloading', 'None', 1, 'ai'),
-(6, 6, 'Which packages represent interfaces and classes for servlet API?', 'javax.servlet', 'javax.servlet.http', 'Both A & B', 'None of the above', 3, 'ai'),
-(7, 7, 'Which pattern is the struts framework based?', 'MVC2 Pattern', 'Bridge Pattern', 'MVC 1 Pattern', 'None of the following', 1, 'ai'),
-(8, 8, 'Which program obtains a remote reference to one or more remote objects on a server and then invokes methods on them in an RMI application?', 'Server', 'Client', 'Both B & A', 'none', 2, 'ai'),
-(9, 9, 'Which action tags are used in JSP for developing web application with Java Bean?', 'jsp:useBean', 'jsp:setProperty', 'B jsp:getProperty', 'Both B & C', 4, 'ai'),
-(10, 10, 'Which JDBC type represents a 64-bit signed integer value between -9223372036854775808 and 9223372036854775807?', 'SMALLINT', 'BIGINT', 'TINYINT', 'INTEGER5', 2, 'ai'),
-(11, 1, 'dsdasdfgfsdgfsdfgsdgfh() method. Moreover, its methods don\'t throw IOException?', 'Console class', 'Scanner Class', 'FileInputStream class', 'PrintStream class', 4, 'ml'),
-(12, 2, ' asgdfgffdfsfsdg a thread?', '3', '1', '4', '2', 2, 'ml'),
-(13, 3, 'Whisdffgffsdfgom the classes in the same package as well as classes in other Packages that are subclasses of the declaring class?', 'private', 'Public', 'Protected', 'None of the above', 3, 'ml'),
-(14, 4, 'Which method of object class can clone an object?', 'copy()', 'Objectcopy()', ' Objectclone()', 'Clone()', 3, 'ml'),
-(15, 5, 'Which is a technique in Java in which a class can have any number of constructors that differ in parameter lists?', 'Constructor overloading', 'Method overloading', 'Operator overloading', 'None', 1, 'ml'),
-(16, 6, 'Which packages represent interfaces and classes for servlet API?', 'javax.servlet', 'javax.servlet.http', 'Both A & B', 'None of the above', 3, 'ml'),
-(17, 7, 'Which pattern is the struts framework based?', 'MVC2 Pattern', 'Bridge Pattern', 'MVC 1 Pattern', 'None of the following', 1, 'ml'),
-(18, 8, 'Which program obtains a remote reference to one or more remote objects on a server and then invokes methods on them in an RMI application?', 'Server', 'Client', 'Both B & A', 'none', 2, 'ml'),
-(19, 9, 'Which action tags are used in JSP for developing web application with Java Bean?', 'jsp:useBean', 'jsp:setProperty', 'B jsp:getProperty', 'Both B & C', 4, 'ml'),
-(20, 10, 'Which JDBC type represents a 64-bit signed integer value between -9223372036854775808 and 9223372036854775807?', 'SMALLINT', 'BIGINT', 'TINYINT', 'INTEGER5', 2, 'ml'),
-(21, 2, 'Which one of the following models is not suitable for accommodating any change?', 'Build & Fix Model', 'Prototyping Model', 'RAD Model', 'Waterfall Model', 4, 'se'),
-(22, 3, ' Which one of the following is not a phase of Prototyping Model?', 'Quick Design', 'Coding', 'Prototype Refinement', 'Engineer Product', 2, 'se'),
-(23, 4, 'RAD Model has', '2 phases', '3 phase', '5 phases', '6 phases', 3, 'se'),
-(24, 5, 'SDLC stands for', 'Software Development Life Cycle', 'System Development Life cycle', 'Software Design Life Cycle', 'System Design Life Cycle', 1, 'se'),
-(25, 6, '“Software engineers should not use their technical skills to misuse other people’s computers.”Here the term misuse refers to:', 'Unauthorized access to computer material', 'Unauthorized modification of computer material', 'Dissemination of viruses or other malware', 'All of the mentioned', 4, 'se'),
-(26, 7, 'Choose the correct option in terms of Issues related to professional responsibility', 'Confidentiality', 'Intellectual property rights', 'Both Confidentiality & Intellectual property rights', 'Managing Client Relationships', 3, 'se'),
-(27, 8, ' Identify the correct statement: “Software engineers shall', 'act in a manner that is in the best interests of his expertise and favour.”', 'act consistently with the public interest.”', 'ensure that their products only meet the SRS.”', 'all of the mentioned\"', 2, 'se'),
-(28, 9, 'The reason for software bugs and failures is due to', 'Software companies', 'Software Developers', 'Both Software companies and Developers', 'All of the mentioned', 3, 'se'),
-(29, 10, 'Structured programming codes includes ?', 'alteration & iteration', ' multiple exit from loops', 'sequencing', 'both 1 and 3', 4, 'se');
+('77777@gmail.com', 2, 3, 0, 0, 0, 0, 0, 0, 0, 0),
+('prateekbharadwaj2533@gmail.com', 3, 3, 3, 3, 3, 3, 3, 0, 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -263,12 +178,6 @@ INSERT INTO `try` (`id`, `no`, `question`, `option1`, `option2`, `option3`, `opt
 -- Indexes for table `question`
 --
 ALTER TABLE `question`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indexes for table `question_1`
---
-ALTER TABLE `question_1`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -284,12 +193,6 @@ ALTER TABLE `result`
   ADD PRIMARY KEY (`email`);
 
 --
--- Indexes for table `try`
---
-ALTER TABLE `try`
-  ADD PRIMARY KEY (`id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -298,12 +201,6 @@ ALTER TABLE `try`
 --
 ALTER TABLE `question`
   MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
-
---
--- AUTO_INCREMENT for table `try`
---
-ALTER TABLE `try`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

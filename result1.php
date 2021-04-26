@@ -5,12 +5,12 @@ header("Location:index.php?err12=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 $email = $_SESSION['login'];
 $q = "select * from regd where email = '$email'";
-$res=mysqli_query($con,$q) or die("yoyo query");
+$res=mysqli_query($con,$q) or die("wrong query");
 
 while($result=mysqli_fetch_array($res)){
     $sub= $result['sub'];
 }
-$query="select * from try where sub = '$sub'";
+$query="select * from question where sub = '$sub'";
 $r=mysqli_query($con,$query);
 while ($row = $r->fetch_assoc()) {
     echo $row['classtype']."<br>";

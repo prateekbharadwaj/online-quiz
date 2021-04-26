@@ -43,7 +43,6 @@ $array=mysqli_fetch_array($x);
   <link rel="stylesheet" href="file/bootstrap-4.2.1-dist/css/bootstrap.min.css">
   <script src="file/jquery.min.js"></script>
   <script src="file/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
- 
   <style>
     .container1 {
   display: block;
@@ -108,6 +107,12 @@ $array=mysqli_fetch_array($x);
   background: white;
 }
 
+
+
+
+
+
+
 .checkmark1 {
   position: absolute;
   top: 0;
@@ -150,11 +155,19 @@ $array=mysqli_fetch_array($x);
   background: white;
 }
 
+
+
+
+
+
+
+
 .label{
   display: inline-block;
   margin-bottom: 0.5rem;
 }
 </style>
+ 
 
 <div class="row">
   <div class="col-auto mr-auto"><form method="post" action="thank.php"> 
@@ -166,18 +179,11 @@ $array=mysqli_fetch_array($x);
 </div>
 <div class="container col-md-8 p-3 border shadow-lg">
 	<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Instruction</button>
-  <div id="demo" class="collapse"><button  type="button" style="height:20px;width:40px;" class="btn btn-success"></button>Right Attempted<br>
+  <div id="demo" class="collapse"><button  type="button" style="height:20px;width:40px;" class="btn btn-success"></button>Write Attempted<br>
   <button  type="button" style="height:20px;width:40px;" class="btn btn-danger"></button>  Wrong Attempted<br>
  <button type="button" style="height:20px;width:40px;" class="btn btn-warning"></button>  Not Attempted
-<br><br><br>
- <label class="container1">
-	<input type="radio" checked name='<?php echo "$name"?>'><h2>Right Option</h2>
-	<span class="checkmark"></span>
-	</label>
-	<label class="container1">
-	<input type="radio" checked name='<?php echo "$name"?>'><h2>Wrong Attempt</h2>
-	<span class="checkmark1"></span>
-	</label>
+<br><br>
+ 
 </div><br><br><br>
 
 	<?php

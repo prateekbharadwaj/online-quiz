@@ -18,6 +18,9 @@ header("Location:signup.php?err12=1");
   <script src="file/jquery.min.js"></script>
   <script src="file/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
   <script src="file/myjquery.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -53,22 +56,26 @@ header("Location:signup.php?err12=1");
        <h4 class="card-text" style="color: black;text-align:left;">4. One after another questions with its options will appear.</h4>
 
        <h4 class="card-text" style="color: black;text-align:left;">5. You can submit before time but, you can't appear again.</h4>
-       <form method="post" action="tryphp.php">
-  <section id="header-container">
-  <select name="sub">
-    <option disabled>Select a Subject?</option>
-    <option value="ml">Machine Learning </option>
-    <option value="ai">Artificial Intelligence</option>
-    <option value="cn">Computer Networks</option>
-    <option value="se">Sofeware Engineering</option>
-    <option value="os">Operating System</option>
-  </select>
-</section>
+       <br>
 
+       <form method="post" action="tryphp.php">
+          <section id="header-container">
+
+          <select class="form-select" aria-label="Default select example" name="sub">
+            <option selected>Select a Subject?</option>
+            <option value="ml">Machine Learning </option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cn">Computer Networks</option>
+            <option value="se">Sofeware Engineering</option>
+            <option value="os">Operating System</option>
+          </select>
+        </section>
+        <br>
        <input  type="submit" class="btn btn-success" value="Start Test"></input>
    </form>
-
    
+
+
       </div>
     </div>
 </div>
