@@ -1,13 +1,13 @@
 <?php
 session_start();
 if(!isset($_SESSION['login']))
-header("Location:index.php?err12=1");
+header("Location:signin.php?err13=1");
 $con=mysqli_connect("localhost","root","","oq") or die("server not found");
 //echo $_POST['que1'];
 
 $email = $_SESSION['login'];
 $q = "select * from regd where email = '$email'";
-$res=mysqli_query($con,$q) or die("yoyo query");
+$res=mysqli_query($con,$q) or die("wrong query");
 
 while($result=mysqli_fetch_array($res)){
     $sub= $result['sub'];
@@ -61,7 +61,7 @@ $array=mysqli_fetch_array($x);
 	
 <div class="row">
 	<div class="col-4">
-		<form method="post" action="thank.php"> 
+		<form method="post" action="logout.php"> 
 <input type="submit" name="logout" class="btn btn-danger" style="margin-top: 30px;margin-left: 10px;" value="Logout">	</input>
 </form>
 <h1 style="color:white;"> Score:</h1>

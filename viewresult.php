@@ -170,7 +170,7 @@ $array=mysqli_fetch_array($x);
  
 
 <div class="row">
-  <div class="col-auto mr-auto"><form method="post" action="thank.php"> 
+  <div class="col-auto mr-auto"><form method="post" action="logout.php"> 
 <input type="submit" name="logout" class="btn btn-danger"  style="margin-top: 50px;margin-left: 250px;" value="Logout">	</input>
 </form></div>
   <div class="col-auto"><form method="post" action="result.php"> 

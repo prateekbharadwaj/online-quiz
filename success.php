@@ -23,7 +23,7 @@
 
 <div class="container">
   <div class="jumbotron">
-    <h1 class="text-primary" style="text-align: center">Congratulations You are Successfully signup</h1>      
+    <h1 class="text-primary" style="text-align: center">Congratulations You are Successfully Signed Up</h1>      
     <h2 class="text-success" style="text-align:center">Click <a href="signin.php"><button type="button" class="btn btn-success">Here</button></a> to Log in</h2>
   </div>
      

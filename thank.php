@@ -1,3 +1,9 @@
+<?php
+
+session_unset();
+
+
+?>
 <html lang="en">
 <head>
 <style>

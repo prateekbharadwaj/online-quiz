@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['login']))
-header("Location:signup.php?err12=1");
+header("Location:signin.php?err13=1");
 
 
 	
@@ -55,7 +55,7 @@ header("Location:signup.php?err12=1");
        
        <h4 class="card-text" style="color: black;text-align:left;">4. One after another questions with its options will appear.</h4>
 
-       <h4 class="card-text" style="color: black;text-align:left;">5. You can submit before time but, you can't appear again.</h4>
+       <h4 class="card-text" style="color: black;text-align:left;">5. You can submit before time.</h4>
        <br>
 
        <form method="post" action="tryphp.php">
